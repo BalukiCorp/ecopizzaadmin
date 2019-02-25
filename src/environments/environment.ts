@@ -5,12 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-  apiKey: "AIzaSyAmnX3p5JlyN0aveQPtd17-hki3fDXV9XE",
-  authDomain: "ecopizza-faef8.firebaseapp.com",
-  databaseURL: "https://ecopizza-faef8.firebaseio.com",
-  projectId: "ecopizza-faef8",
-  storageBucket: "ecopizza-faef8.appspot.com",
-  messagingSenderId: "365951267325"
+    apiKey: "AIzaSyAmnX3p5JlyN0aveQPtd17-hki3fDXV9XE",
+    authDomain: "ecopizza-faef8.firebaseapp.com",
+    databaseURL: "https://ecopizza-faef8.firebaseio.com",
+    projectId: "ecopizza-faef8",
+    storageBucket: "ecopizza-faef8.appspot.com",
+    messagingSenderId: "365951267325",
+  },
 };
 
 /*

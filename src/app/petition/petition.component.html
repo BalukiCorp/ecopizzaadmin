@@ -1,3 +1,35 @@
-<p>
-  petition works!
-</p>
+<html>
+<head>
+  <title>Orders</title>
+</head>
+<body>
+  <div class="container">
+    <table>
+      <thead>
+      <tr>
+        <th>Nombre de Consumidor</th>
+        <th>Numero de Telefono</th>
+        <th>Direccion de Entrega</th>
+        <th>Cantidad Bebidas</th>
+        <th>Tipo de Bebida</th>
+        <th>Tamaño de Pizza</th>
+        <th>Tipo de Pizza</th>
+      </tr>
+      <button (click)="reLoad()">Reload</button>
+      </thead>
+      <tbody *ngFor="let item of todos">
+       <tr>
+          <td>{{item.name}}</td>
+          <td>{{item.telephone}}</td>
+          <td>{{item.location}}</td>
+          <td>{{item.drink_quantity}}</td>
+          <td>{{item.drink}}</td>
+          <td>{{item.size}}</td>
+          <td>{{item.category}}</td>
+       </tr>
+      </tbody>
+    </table>
+    <button class="lf--submit" (click)="signOut()">Cerrar Sesion</button>
+  </div>
+</body>
+</html>

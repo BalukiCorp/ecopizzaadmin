@@ -20,8 +20,12 @@ export class AuthService {
     });
   }
   async login(email: string, password: string) {
-    const result = await this.afAuth.auth.signInWithEmailAndPassword(email, password);
-    this.router.navigate(['/petition']);
+    const result = await this.afAuth.auth.signInWithEmailAndPassword(email, password).then(() => {
+      this.router.navigate(['/petition']);
+    }).catch(() => {
+      alert('Email o contraseña incorrecta');
+    });
+
   }
   async sendPasswordResetEmail(passwordResetEmail: string ) {
     return await this.afAuth.auth.sendPasswordResetEmail(passwordResetEmail);

@@ -3,7 +3,9 @@
   <title>Orders</title>
 </head>
 <body>
+<p>EcoPizza</p>
   <div class="container">
+    <button (click)="reLoad()">Reload</button>
     <table>
       <thead>
       <tr>
@@ -15,7 +17,7 @@
         <th>Tamaño de Pizza</th>
         <th>Tipo de Pizza</th>
       </tr>
-      <button (click)="reLoad()">Reload</button>
+
       </thead>
       <tbody *ngFor="let item of todos">
        <tr>
